@@ -9,7 +9,12 @@ function myFunction() {
 }
  
 function showImage() {
+	var img = document.createElement("img");
+	img.src = "Dome.jpg";
+	img.height = 500;
+	img.width = 500;
 
+	document.getElementById("imageHolder").appendChild(img)
 }
 
 </script>
@@ -28,6 +33,10 @@ function showImage() {
 <button onclick="myFunction()">Select and Delete</button>
 
 <button onclick="showImage()">Show Image</button>
+
+<div id="imageHolder">
+
+</div>
 
 </body>
 </html>
