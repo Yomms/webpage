@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html>
+<head>
+
+<script>
+function myFunction() {
+	var selectBox = document.getElementById("cars");
+	selectBox.remove(selectBox.selectedIndex);
+}
+ 
+function showImage() {
+
+}
+
+</script>
+</head>	
 <body>
 
-<h1>My First Heading</h1>
+<h1>JavaScript HTML Basics</h1>
 
-<p>My first paragraph.</p>
+<select id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+
+<button onclick="myFunction()">Select and Delete</button>
+
+<button onclick="showImage()">Show Image</button>
 
 </body>
 </html>
