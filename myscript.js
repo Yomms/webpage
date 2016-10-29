@@ -12,3 +12,9 @@ function showImage() {
 	document.getElementById("imageHolder").appendChild(img)
 }
 
+function resizeImage() {
+	img {
+    width: 50%;
+    height: auto;
+}
+}
