@@ -16,3 +16,11 @@ function resizeImage() {
  document.getElementById("imgg").width="250";
 
 }
+
+FACTOR = 0.7
+function smaller() {
+	var height = document.getElementById("birds").height * FACTOR
+	var width = document.getElementById("birds").width * FACTOR
+	document.getElementById("birds").width = width
+	document.getElementById("birds").height=height
+}
