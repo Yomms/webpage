@@ -1,0 +1,23 @@
+var fs  = require("fs");
+fs.readFileSync(process.argv[2]).toString().split('\n').forEach(function (line) {
+    if (line != "")  {
+       var newLine = line.split(' ');
+        var fizz = parseInt(newLine[0]);
+        var buzz = parseInt(newLine[1]);
+        var howLong = parseInt(newLine[2]);
+        var arrayNumber = [];
+        for (i = 1; i<=howLong; i++) {
+            if (((i % fizz) == 0) && ((i % buzz) == 0)) {
+                 arrayNumber.push("FB");
+            }
+            else  if ((i % fizz) == 0) {
+                 arrayNumber.push("F");
+            }
+            else if ((i % buzz) == 0) {
+                 arrayNumber.push("B");
+            }
+            else    arrayNumber.push(i);
+        }
+        console.log(arrayNumber.join(' '));
+    }
+});
