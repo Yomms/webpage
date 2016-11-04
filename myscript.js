@@ -6,13 +6,13 @@ function myFunction() {
 function showImage() {
 	var img = document.createElement("img");
 	img.src = "Dome.jpg";
-	img.id = "imgg";
+	img.id = "img_id";
 	img.width = 500;
 	document.getElementById("imageHolder").appendChild(img);
 }
 
 function resizeImage() {
-
- document.getElementById("imgg").width="250";
-
+ var imageSize = document.getElementById("img_id").width;
+ var imageResize = imageSize * .5
+ document.getElementById("img_id").width = imageResize;
 }
